@@ -1,0 +1,22 @@
+1. Visual Studio
+- Marketten "proto3" indirildi
+- Terminal den "npm install google-protobuf" indirildi. 
+
+2. Ortam değişkenleri için google "protopuf release" yazıldı 1. github sayfasındaki win64 uyumlu indirildi
+C:\   dizinine dosya koyuldu ve ortam değişkenleri Path > Yeni "C:\protoc-25.2-win64\bin" eklendi.
+
+
+3. Java haline getirme
+## protoc --java_out=. weather.proto
+## protoc -I. --java_out=api/ weather.proto
+## protoc --java_out=src/main/java src/main/proto/Order.proto
+
+
+- - - - -  IntelliJ IDEA - - - - - 
+
+- İntellij Marketten protobuf yüklenti settings>plugins
+- Mave indirildi https://phoenixnap.com/kb/install-maven-windows   bu linkten C:\Program Files\apache-maven-3.9.6  olarak.
+## mvn clean
+## mvn install
+## mvn package
+## mvn -v 
